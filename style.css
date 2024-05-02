@@ -5,7 +5,6 @@
     box-sizing: border-box;
     font-family: "Roboto", sans-serif;
 }
-
 body{
     display: flex;
     justify-content: center;
@@ -14,26 +13,23 @@ body{
     height: 100vh;
     background-color: #50C7C7;
 }
-
 section{
     background-color: #fff;
     padding: 10px;
     width: 450px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    overflow: hidden;
 }
-
 h1 {
     text-align: center;
     margin-bottom: 10px;
 }
-
 .mon-input {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
-
 input {
     width: 90%;
     padding: 10px 5px;
@@ -42,7 +38,6 @@ input {
     outline: none;
     border-radius: 6px 0 0 6px;
 }
-
 button{
     width: 10%;
     font-size: 20px;
@@ -51,4 +46,54 @@ button{
     color: #fff;
     background-color: #50C7C7;
     border-radius: 0 6px 6px 0;
+    cursor: pointer;
+}
+.mestaches .LT{
+    display: flex;
+}
+.mestaches .buttonContainer{
+    position: relative;
+    margin: 10px 0;
+    height: auto;
+    width: 20%;
+    display: flex;
+}
+.mestaches .buttonContainer button{
+    margin-right: 5px;
+    width: 50%;
+    height: 100%;
+    background-color: rgb(64, 64, 135);
+    cursor: pointer;
+    border-radius: 6px;
+    animation: animeListes .5s linear;
+}
+.mestaches .buttonContainer button:last-child{
+    background-color: crimson;
+}
+.liste-item{
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    margin-right: 10px;
+    padding: 10px;
+    padding-left: 5px;
+    border-radius: 6px;
+    color: #fff;
+    background-color: #50C7C7;
+    word-break: break-all;
+    animation: animeListes .5s linear;
+    width: 80%;
+}
+.liste-item:last-child{
+    margin-bottom: 0;
+}
+@keyframes animeListes {
+    from {
+        transform: translateY(50px);
+    }
+}
+
+.fait{
+    background-color: rgb(247,118,118);
+    text-decoration: line-through;
 }
