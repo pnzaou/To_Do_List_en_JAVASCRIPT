@@ -36,11 +36,3 @@ function ajouterTache() {
         })
     }   
 }
-
-console.log(bb)
-for(let i = 0; i < bb.length; i++){
-    console.log(bb[i])
-    bb[i].addEventListener('click', function(){
-        bb[i].style = "color: yellow"
-    })
-}
